@@ -18,15 +18,9 @@ Point& Point::operator+=(Point const &pt1) {
 }
 
 // Surcharge operateur <<
-/*
-void Point::operator<<(Point const &pt1) {
-  std::cout << "X :" << pt1.X << "Y : " << pt1.Y << endl;
-}*/
 ostream &operator << (ostream &os, Point &p) {
   os << " ( x: " << p.getX() << ", y: " << p.getY() << ")";
   return os;
 }
-
-
 
 

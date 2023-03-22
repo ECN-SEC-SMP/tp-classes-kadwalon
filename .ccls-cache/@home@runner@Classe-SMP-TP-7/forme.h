@@ -3,21 +3,21 @@
 using namespace std;
 class Forme {
 private:
-  Point ptform;
-public:
+  Point pointcentre;
 
+public:
   // Surcharge
-  //void operator+=(Forme const &form1);
+  Forme& operator+=(Forme const &form1);
 
   // Surcharger l'opérateur <<
-  //ostream &operator<<(ostream &os, Point const &p);
+  // ostream &operator<<(ostream &os, Point const &p);
   // void operator << (ostream&, Point const &pt1);
 
   // Constructeur sans paramètres
-  //Forme() : X(0), Y(0) {}
+  // Forme() : X(0), Y(0) {}
   // Constructeur avec deux paramètres réels
-  //Forme(double x, double y) : X(x), Y(y) {}
-  //Forme(Point pt : ptform(pt) {}
+  // Forme(double x, double y) : X(x), Y(y) {}
+  Forme(Point pt) : pointcentre(pt) {};
   // Constructeur par recopie
-  //Forme(const Point &p) : X(p.X), Y(p.Y) {}
+  // Forme(const Point &p) : X(p.X), Y(p.Y) {}
 };

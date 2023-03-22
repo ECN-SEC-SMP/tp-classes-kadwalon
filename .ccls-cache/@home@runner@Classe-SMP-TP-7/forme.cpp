@@ -1,15 +1,10 @@
 #include "forme.h"
+//#include "point.h"
 #include <iostream>
 using namespace std;
 
-//Surcharge operateur +=
-
-//Forme& Forme::operator+=(Forme const &form1) {
-//  ptform += form1.ptform;
-//  return * this;
-//}
-
-
-
-
-
+// Surcharge operateur +=
+Forme &Forme::operator+=(Forme const &form1) {
+  pointcentre += form1.pointcentre; 
+  return *this;
+}
