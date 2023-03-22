@@ -4,19 +4,22 @@
 #include <iostream>
 using namespace std;
 
-class Forme : public Point {
+class Forme {
 private:
   Point pointcentre;
 
 public:
   // Surcharge
   Forme &operator+=(Forme const &form1);
-  virtual void perimetre();
-  virutal void surface();
+
+  virtual double perimetre() = 0;
+  virtual double surface() = 0;
+
   // Acesseur
   Point getptcentre() const;
 
   // Constructeur
+  Forme();
   Forme(Point pt) : pointcentre(pt){};
 };
 

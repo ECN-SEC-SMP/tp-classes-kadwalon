@@ -1,7 +1,7 @@
 #include "point.h"
 #include <iostream>
 using namespace std;
-
+// checker modelio
 // Tanslater
 void Point::translater(Point pt) {
   this->X = pt.X;

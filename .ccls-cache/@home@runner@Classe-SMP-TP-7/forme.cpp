@@ -17,3 +17,7 @@ ostream &operator<<(ostream &os, Forme const &f) {
   return os;
 }
 
+Forme::Forme(){
+  Point pt;
+  this->pointcentre = pt;
+}
