@@ -18,8 +18,10 @@ int main() {
 
   cout << "pt1 après pt1 += pt2: " << pt << endl;
   Forme forme(pt);
-  Point new1 = forme.getptcentre();
-  cout << new1 << endl;
+  Point new1 = forme.getptcentre(); 
+  //cout << new1 << endl;
   cout << forme << endl;
+
+  
   // std::cout << pt;
 }

@@ -11,7 +11,8 @@ private:
 public:
   // Surcharge
   Forme &operator+=(Forme const &form1);
-  // virtual 
+  virtual void perimetre();
+  virutal void surface();
   // Acesseur
   Point getptcentre() const;
 

@@ -13,7 +13,7 @@ Forme &Forme::operator+=(Forme const &form1) {
 Point Forme::getptcentre() const { return this->pointcentre; }
 
 ostream &operator<<(ostream &os, Forme const &f) {
-  os << "forme abstraite  ( point centrale : " << f.getptcentre() << ")";
+  os << "forme abstraite  ( point central : " << f.getptcentre() << ")";
   return os;
 }
 
